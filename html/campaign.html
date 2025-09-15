@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Campaign</title>
+       <!-- google font link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"/>
+    <!--  fontawosome link-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- style link -->
+    <link rel="stylesheet" href="../css/campaign.css" />
+</head>
+<body>
+<nav>
+  <div class="logo">
+  <h2>Fund<span>Rise</span>.</h2>
+  </div>
+  <div class="nav-links hirozental">
+            <ul>
+                <li><a href="index.html">Explore</a></li>
+                <li><a href="campaign.html">Start a project</a></li>
+            </ul>
+            
+        </div>
+        
+        <div class="sign-buttons">
+            
+            <a href="user.html" class="signup">Dashboard</a>
+        </div>
+        
+        <!-- for mobile-->
+        <div class="nav-links vertical" id="mobileNav">
+            <ul>
+                <li><a href="index.html">Explore</a></li>
+                <li><a href="campaign.html">Start a project</a></li>
+                <li> <a href="user.html" class="signup">Dashboard</a></li>
+                
+            </ul>
+        </div>
+        
+        <div class="list-icon" id="list-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+</nav>
+    <div class="container">
+        <div class="form-header">
+            <h1 id="hchanging">Create a Campaign</h1>
+            <p>Turn your idea into a reality. Fill out the details below to launch your campaign.</p>
+        </div>
+
+        <form>
+            <!-- Campaign Details Section -->
+            <div class="form-section">
+                <h2 class="section-title">Campaign Details</h2>
+                
+                <div class="field">
+                    <label for="title">Campaign Title</label>
+                    <input type="text" id="title" name="title" placeholder="e.g. The Ultimate Travel Backpack">
+                </div>
+
+                <div class="field">
+                    <label for="description">Campaign Description</label>
+                    <textarea id="description" name="description" placeholder="Tell us about your project..."></textarea>
+                </div>
+
+                
+                    <div class="field">
+                        <label for="goal">Funding Goal</label>
+                        
+                            <input type="number" id="goal" name="goal" placeholder="10,000">
+                     
+                    </div>
+
+                    
+                
+
+                <div class="field">
+                    <label for="category">Category</label>
+                    <select id="category" name="category">
+                        <option value="">Select a category</option>
+                        <option value="Technology">Technology</option>
+                        <option value="design">Design</option>
+                        <option value="games">Games</option>
+                        <option value="film">Film & Video</option>
+                        <option value="music">Music</option>
+                        <option value="art">Art</option>
+                        <option value="food">Food</option>
+                        <option value="publishing">Publishing</option>
+                        <option value="Sports">Sports</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="Image">Campaign Image</label>
+                   <input type="file" name="Image" id="Image" accept="image/*">
+                   <img id="preview" src="" alt="Preview" style="max-width:200px; display:block; margin-top:10px;">
+                </div>
+            </div>
+
+            <!-- Reward Tiers Section -->
+            <!-- <div class="form-section">
+             
+
+                <div id="reward-tiers">
+                    <div class="reward-tier">
+                        <div class="two-column">
+                            <div class="field">
+                                <label for="reward-title">Reward Title</label>
+                                <input type="text" id="reward-title" name="reward-title" placeholder="e.g. Early Bird Special">
+                            </div>
+
+                            <div class="field">
+                                <label for="reward-amount">Reward Amount</label>
+                               
+                                    <input type="text" id="reward-amount" name="reward-amount" placeholder="25">
+                                
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="reward-description">Description</label>
+                            <textarea id="reward-description" name="reward-description" placeholder="Describe what backers will receive for this pledge."></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <button type="submit" class="create-btn">Create Campaign</button>
+        </form>
+    </div>
+
+</div>
+<script src="../js/navbar.js"></script>
+<script src="../js/campaign.js"></script>
+</body>
+</html>

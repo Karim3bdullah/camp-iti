@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Dashboard</title>
+    <!-- google font link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"/>
+    <!--  fontawosome link-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- style link -->
+    <link rel="stylesheet" href="../css/user.css" />
+  </head>
+  <body>
+    <nav>
+  <div class="logo">
+  <h2>Fund<span>Rise</span>.</h2>
+  </div>
+  <div class="nav-links hirozental">
+            <ul>
+                <li><a href="index.html">Explore</a></li>
+                <li><a href="campaign.html">Start a Campaign</a></li>
+            </ul>
+            <button id="logout" class="logout" type="submit">Log Out</button>
+        </div>
+        
+         
+        
+        <!-- for mobile-->
+        <div class="nav-links vertical" id="mobileNav">
+            <ul>
+                <li><a href="index.html">Explore</a></li>
+                <li><a href="campaign.html">Start a Campaign</a></li>
+                <button id="logout" class="logout" type="submit">Log Out</button>
+            </ul>
+        </div>
+        
+        <div class="list-icon" id="list-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+</nav>
+    <div class="container">
+      <div class="side-bar">
+        <div class="bar-content">
+          <div class="controls">
+            <ul>
+              <li class="active"><i class="fas fa-border-all"></i>Dashboard</li>
+              <li id="Campaigns">
+                <i class="fas fa-users"></i><button type="submit">My Campaigns</button>
+              </li>
+              <li id="MyPledges">
+                <i class="fas fa-hand-holding-heart"></i>
+                <button type="submit">My Pledges</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="main-dash">
+        <!-- <div class="dash-nav">
+          <h1 id="welcome">user Dashboard</h1>
+        </div> -->
+        <div class="dash-box">
+            <div id="content" class="dash-content">
+              <h2 id="welcome">My Campaigns</h2>
+            <h2 id="title"></h2>
+            <div class="cards" id="cards">
+               
+          </div>
+          
+         
+        </div>
+            
+      </div>
+    </div>
+      </div>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/user.js"></script>
+  </body>
+</html>

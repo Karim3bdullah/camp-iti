@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+       <!-- google font link -->
+     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!--  fontawosome link-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- style link -->
+    <link rel="stylesheet" href="../css/admin.css">
+ 
+</head>
+<body>
+      <nav>
+  <div class="logo">
+  <h2>Fund<span>Rise</span>.</h2>
+  </div>
+  <div class="nav-links hirozental">
+            <ul>
+                <li><a href="index.html">Explore</a></li>
+                
+            </ul>
+            <button id="logout" class="logout" type="submit">Log Out</button>
+        </div>
+        
+         
+        
+        <!-- for mobile-->
+        <div class="nav-links vertical" id="mobileNav">
+            <ul>
+                <li><a href="index.html">Explore</a></li>
+                
+                <li><a href="regester.html">Sign Up</a></li>
+                <li><button id="logout" class="logout" type="submit">Log Out</button></li>
+            </ul>
+        </div>
+        
+        <div class="list-icon" id="list-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+</nav>
+
+  <div class="container">
+<div class="side-bar">
+  <div class="bar-content">
+     
+  <div class="controls">
+    <ul>
+      <li id="statistic" class="active"><i class="fas fa-border-all"></i>Dashboard</li>
+      <li id="User"><i class="fas fa-users"></i><button type="submit">Users</button></li>
+      <li id="campaigns"><i class="fas fa-bullhorn"></i><button type="submit">Campaigns</button></li>
+       <li id="Pledges"><i class="fas fa-hand-holding-heart"></i><button type="submit">My Pledges</button></li>
+    </ul>
+  </div>
+  </div>
+  </div>
+ 
+  <div class="main-dash">
+ 
+    <div class="dash-box">
+<!-- <div class="cards">
+  <div class="card">
+    <i class="fas fa-bullhorn"></i>
+    <div class="text">
+      <p>Total Users</p>
+      <h3 id="totalUsers">0</h3>
+    </div>
+  </div>
+</div> -->
+    <div id="content" class="dash-content">
+      <h2 id="title"></h2>
+      <table >
+        <thead  id="thead">
+        </thead>
+        <tbody id="tbody">
+         </tbody>
+      </table>
+    </div>
+    <!-- <div id="campaigns" class="dash-content"> 
+      <h2 id="title">Campaigns</h2>
+      <table>
+        <thead>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>${ele.title}</td>
+            <td>${ele.creatorName}</td>
+            <td><span class=${statusClass}>${statusText}</span></td>
+            <td><button id=${ele.id} class=${buttonClass}>${buttonText}</button></td>
+          </tr>
+        
+        </tbody>
+      </table>
+    </div>  -->
+    </div>
+  </div>
+  </div>
+  
+    <script src="../js/navbar.js"></script>
+    <script src="../js/admin.js"></script>
+   </body>
+</html>

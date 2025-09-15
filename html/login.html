@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Page</title>
+     <!-- google font link -->
+     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!--  fontawosome link-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- style link -->
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+<nav>
+  <div class="logo">
+  <h2>Fund<span>Rise</span>.</h2>
+  </div>
+  <div class="nav-links hirozental">
+            <ul>
+                <li><a href="index.html">Explore</a></li>
+                <li><a href="login.html">Start a project</a></li>
+            </ul>
+        </div>
+        
+        <div class="sign-buttons">
+            <a href="regester.html" class="signup">Sign Up</a>
+        </div>
+        
+        <!-- for mobile-->
+        <div class="nav-links vertical" id="mobileNav">
+            <ul>
+                <li><a href="index.html">Explore</a></li>
+                <li><a href="index.html">Start a project</a></li>
+                <li><a href="regester.html">Sign Up</a></li>
+            </ul>
+        </div>
+        
+        <div class="list-icon" id="list-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+</nav>
+
+
+
+    <div class="form-container">
+        <div class="form-content">
+             <h1>Welcome Back</h1>
+        <p>Log in to continue your journey with FundRise.</p>
+         <form action="" method="get">
+            <div class="field">
+                <label for="username">Email address</label>
+                 <input  type="email" id="username" name="username" placeholder="you@example.com" required><br><br>
+            </div>
+           <div class="field">
+            <label for="password">Password:</label>
+          <input  type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+        </div>
+        <div class="form-options">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <a href="#" class="forgot-password">Forgot your password?</a>
+                </div>
+        
+        <input id="btn" type="submit" value="Login">
+    </form>
+      <div class="signup-link">
+                Don't have an account? <a href="regester.html">Sign up</a>
+    </div>
+    </div>
+    
+    </div>
+   
+
+    <script src="../js/login.js"></script>
+</body>
+</html>
