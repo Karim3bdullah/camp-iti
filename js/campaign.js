@@ -20,7 +20,7 @@ window.onload = async function () {
   let category = document.getElementById("category");
   let createbtn = document.querySelector(".create-btn");
   let camp = localStorage.getItem("editCampaignId");
-
+  let raised;
     // edit campaign
   if (camp) {
     head.innerHTML = "Edit your campaign";
@@ -38,6 +38,7 @@ window.onload = async function () {
       category.value = data.category;
       preview.src = data.image;
       oldImage = data.image;
+      raised= data.raised;
     } catch (error) {
       console.log("Error fetching campaign data:", error);
     }
@@ -55,12 +56,13 @@ window.onload = async function () {
       }
 
       let Imageurl = image.files.length > 0
-        ? await toBase64(image.files[0]) // صورة جديدة
-        : oldImage; // الصورة القديمة
+        ? await toBase64(image.files[0]) 
+        : oldImage; 
 
       let updatedObject = {
         title: title.value,
         image: Imageurl,
+        raised:raised,
         description: description.value,
         category: category.value,
         creatorName: user.name,
@@ -145,7 +147,7 @@ window.onload = async function () {
     }
   });
 
-  // ---- Image converter ----
+  // Image converter 
   function toBase64(file) {
     return new Promise((resolve, reject) => {
       const reader = new FileReader();
